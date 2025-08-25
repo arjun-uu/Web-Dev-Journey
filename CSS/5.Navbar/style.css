@@ -1,0 +1,150 @@
+ body {
+     font-family: Arial, sans-serif;
+     padding: 20px;
+     margin: 0;
+ }
+
+ h2 {
+     margin: 40px 0 20px;
+ }
+
+ nav {
+     margin-bottom: 30px;
+ }
+
+ /* General nav styles */
+ nav ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+
+ nav li {
+     margin: 5px 0;
+ }
+
+ nav a {
+     text-decoration: none;
+     color: #333;
+     font-weight: bold;
+     transition: all 0.3s ease;
+ }
+
+ .login-btn {
+     padding: 8px 16px;
+     background-color: #333;
+     color: white;
+     border: none;
+     cursor: pointer;
+     border-radius: 5px;
+ }
+
+ .login-btn:hover {
+     background-color: #555;
+ }
+
+ /* 🔹 NAVBAR 1: Horizontal with underline effect */
+ .navbar1 {
+     background-color: #f2f2f2;
+     padding: 10px 20px;
+     width: 100%;
+ }
+
+ .navbar1 ul {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .navbar1 .links {
+     display: flex;
+     gap: 50px;
+ }
+
+ .navbar1 a {
+     position: relative;
+ }
+
+ /* .navbar1 a::after {
+     content: '';
+     position: absolute;
+     width: 0%;
+     height: 2px;
+     left: 0;
+     bottom: -2px;
+     background-color: #333;
+     transition: width 0.3s ease;
+ }
+
+ .navbar1 a:hover::after {
+     width: 100%;
+ } */
+
+ .navbar1 a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #0a65c7;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar1 a:hover::after {
+  transform: scaleX(1);
+}
+
+
+ /* 🔹 NAVBAR 2: Vertical with hover effect */
+ .navbar2 a:hover {
+     background-color: lightblue;
+     padding: 5px 10px;
+     border-radius: 5px;
+ }
+
+ /* 🔹 NAVBAR 3: Horizontal with dropdown */
+ .navbar3 {
+     background-color: #eee;
+     padding: 10px 20px;
+     width: 100%;
+
+ }
+
+ .navbar3 ul {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+
+ .navbar3 .links {
+     display: flex;
+     gap: 50px;
+     position: relative;
+ }
+
+ .navbar3 .dropdown {
+     position: relative;
+ }
+
+ .navbar3 .dropdown-content {
+     display: none;
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: white;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     padding: 10px;
+     border-radius: 5px;
+ }
+
+ .navbar3 .dropdown:hover .dropdown-content {
+     display: block;
+ }
+
+ .navbar3 .dropdown-content a {
+     display: block;
+     padding: 5px 0;
+     white-space: nowrap;
+ }

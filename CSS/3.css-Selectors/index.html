@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Selectors Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Universal and Element Selectors</h1>
+  <p>This paragraph is styled using element selector.</p>
+
+  <div class="highlight">
+    This is a class selector example.
+  </div>
+
+  <p id="intro">This is an ID selector example.</p>
+
+  <h2>Group Selector Target</h2>
+  <p>Group selector targets me too.</p>
+
+  <div class="card">
+    <p>This is a descendant selector example.</p>
+  </div>
+
+  <div class="container">
+    <p>This is a direct child</p>
+    <div>
+      <p>This is a grandchild (won't be selected by child selector)</p>
+    </div>
+  </div>
+
+  <h3>Sibling Example</h3>
+  <p>I'm the adjacent sibling of h3 (selected with +)</p>
+  <p>I'm a general sibling of h3 (selected with ~)</p>
+
+  <input type="text" placeholder="Text input">
+  <input type="email" placeholder="Email input">
+
+  <ul>
+    <li>First</li>
+    <li>Second</li>
+    <li>Third</li>
+  </ul>
+
+  <p class="pseudo">This is for pseudo-element testing.</p>
+
+</body>
+</html>

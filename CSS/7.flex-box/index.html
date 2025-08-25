@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flexbox Game Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎮 Flexbox Game Playground</h1>
+
+  <!-- Control Panel -->
+  <div class="controls">
+    <div>
+      <h3>Flex Direction</h3>
+      <button onclick="setDirection('row')">row</button>
+      <button onclick="setDirection('column')">column</button>
+    </div>
+    <div>
+      <h3>Justify Content</h3>
+      <button onclick="setJustify('flex-start')">flex-start</button>
+      <button onclick="setJustify('center')">center</button>
+      <button onclick="setJustify('space-between')">space-between</button>
+      <button onclick="setJustify('space-around')">space-around</button>
+    </div>
+    <div>
+      <h3>Align Items</h3>
+      <button onclick="setAlign('flex-start')">flex-start</button>
+      <button onclick="setAlign('center')">center</button>
+      <button onclick="setAlign('flex-end')">flex-end</button>
+      <button onclick="setAlign('stretch')">stretch</button>
+    </div>
+  </div>
+
+  <!-- Flex Container -->
+  <div class="flex-container" id="flex-container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

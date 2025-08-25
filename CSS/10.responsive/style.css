@@ -1,0 +1,95 @@
+/* ✅ Base (mobile-first) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f3f3;
+  padding: 20px;
+  text-align: center;
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 5px 0 15px;
+}
+
+.card button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* 🟠 Tablet styles (768px and above) */
+@media (min-width: 768px) {
+  .heading {
+    font-size: 26px;
+  }
+
+  .card {
+    max-width: 400px;
+  }
+
+  .card h2 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 16px;
+  }
+
+  .card button {
+    font-size: 16px;
+  }
+}
+
+/* 🔵 Desktop styles (1024px and above) */
+@media (min-width: 1024px) {
+  .card-container {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1 1 300px;
+    margin: 10px;
+    max-width: 300px;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+}

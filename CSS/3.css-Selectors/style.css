@@ -1,0 +1,92 @@
+/* 🔽 Universal Selector (*)         ➝ Priority: Lowest
+🔽 Element Selector (div, p, h1)  ➝ Low
+🔽 Class / Attribute / Pseudo     ➝ Medium
+🔽 ID Selector (#id)              ➝ High
+🔽 Inline Style (style="...")     ➝ Highest */
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Element Selector */
+h1 {
+  color: navy;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px 0; /* top-bottom  left-right */
+  /* margin: 1px 2px 3px 4px; top right  bottom left */
+}
+
+/* Class Selector */
+.highlight {
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* ID Selector */
+#intro {
+  font-weight: bold;
+  color: green;
+}
+
+/* Group Selector */
+h2, p {
+  font-family: Arial, sans-serif;
+}
+
+/* Descendant Selector */
+.card p {
+  color: gray;
+}
+
+/* Child Selector */
+.container > p {
+  color: blue;
+}
+
+/* Adjacent Sibling Selector */
+h3 + p {
+  color: teal;
+  font-style: italic;
+}
+
+/* General Sibling Selector */
+h3 ~ p {
+  color: coral;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+  border: 2px solid green;
+  padding: 5px;
+}
+
+/* Pseudo-classes */
+input:focus {
+  border-color: dodgerblue;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  color: orange;
+}
+
+/* Pseudo-elements */
+.pseudo::first-letter {
+  font-size: 200%;
+  color: red;
+}
+
+.pseudo::before {
+  content: "👉 ";
+  color: gray;
+}

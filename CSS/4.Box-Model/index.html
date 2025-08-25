@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Box Model</title>
+  <style>
+    /* Apply box-sizing to include padding and border in width/height */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #2c3e50;
+    }
+
+    .box-container {
+      background-color: #e6f7ff;
+      padding: 20px;
+      border: 2px dashed #ccc;
+    }
+
+    .box {
+      width: 200px;
+      padding: 20px;
+      margin: 30px auto;
+      border: 5px solid navy;
+      background-color: lightblue;
+      text-align: center;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .explanation {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 16px;
+      color: #444;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS Box Model Demonstration</h1>
+
+  <div class="box-container">
+    <div class="box">
+      Hello Arjun!<br>
+      This is a Box Model
+    </div>
+  </div>
+
+  <div class="explanation">
+    <p><strong>Box Properties:</strong></p>
+    <ul>
+      <li><strong>Width:</strong> 200px</li>
+      <li><strong>Padding:</strong> 20px (inside space)</li>
+      <li><strong>Border:</strong> 5px solid navy</li>
+      <li><strong>Margin:</strong> 30px auto (space outside the box and centered)</li>
+      <li><strong>Background-color:</strong> lightblue</li>
+    </ul>
+    <p>The outer container has a dashed border and padding to visualize how boxes are nested.</p>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap Carousel</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="content">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.pexels.com/photos/4602725/pexels-photo-4602725.jpeg" class="d-block w-100" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.pexels.com/photos/20733363/pexels-photo-20733363.jpeg" class="d-block w-100" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.pexels.com/photos/12740823/pexels-photo-12740823.jpeg" class="d-block w-100" alt="Image 3">
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      
+      <div class="card-body">
+     <iframe width="280" height="200"
+  src="https://www.youtube.com/embed/PkZNo7MFNFg"
+  title="JavaScript Full Course"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+<p>JavaScript Full Course : Zero to Expert (FreeCodeCamp)</p>
+
+
+      </div>
+      <div class="card-footer d-flex justify-content-center">
+       <button type="button" class="btn btn-outline-danger btn-lg">Watch Now!</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+    
+      <div class="card-body">
+        <iframe width="280" height="200"
+  src="https://www.youtube.com/embed/srvUrASNj0s"
+  title="Responsive Web Design Tutorial"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+<p>Responsive Web Design in 1 Hour (Traversy Media)</p>
+      </div>
+       <div class="card-footer  d-flex justify-content-center">
+        <button type="button" class="btn btn-outline-danger btn-lg">Watch Now!</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+     
+      <div class="card-body">
+<iframe width="280" height="200"
+  src="https://www.youtube.com/embed/1ZYbU82GVz4"
+  title="Relaxing Nature Video"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+<p> Relaxing Nature Video (HD)</p>
+
+      </div>
+      <div class="card-footer  d-flex justify-content-center">
+       <button type="button" class="btn btn-outline-danger btn-lg">Watch Now!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="footer-bottom">
+    <p>© 2025 MyWebsite. All rights reserved.</p> <!--&copy;-->
+  </div>
+  </div>
+
+  <!-- ✅ Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

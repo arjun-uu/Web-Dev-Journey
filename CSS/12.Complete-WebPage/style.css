@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    scroll-behavior: smooth;
+}
+.content {
+    height: auto;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ #carouselExample {
+     height: 50vh;
+     width: auto;
+     overflow: hidden;
+
+ }
+
+
+ #carouselExample .carousel-item img {
+     height: 50%;
+     width: 100%;
+     object-fit: cover;
+ }
+
+
+card-footer >button{
+   
+    
+}
+ .footer-bottom {
+     border-top: 1px solid #333;
+     margin-top: 20px;
+     padding-top: 10px;
+     font-size: 14px;
+     color: #111111;
+     text-align: center;
+ }
+
