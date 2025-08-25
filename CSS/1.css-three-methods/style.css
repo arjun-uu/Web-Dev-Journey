@@ -1,0 +1,14 @@
+/* ✅ External CSS file */
+
+.external-heading {
+  color: darkred;
+  font-size: 26px;
+  text-align: center;
+}
+
+.external-para {
+  color: navy;
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  margin: 10px 20px;
+}

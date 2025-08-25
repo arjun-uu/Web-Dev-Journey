@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Three Methods Example</title>
+
+  <!-- ✅ Internal CSS -->
+  <style>
+    .internal-heading {
+      color: green;
+      font-size: 32px;
+      text-align: center;
+    }
+
+    .internal-para {
+      font-family: Arial, sans-serif;
+      color: #444;
+      margin: 10px 0;
+    }
+  </style>
+
+  <!-- ✅ External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ✅ Inline CSS -->
+  <h1 style="color: blue; font-size: 28px; text-align: center;">
+    This is styled with Inline CSS
+  </h1>
+
+  <!-- ✅ Internal CSS -->
+  <h2 class="internal-heading">This is styled with Internal CSS</h2>
+  <p class="internal-para">
+    Internal CSS allows you to write styles inside the &lt;style&gt; tag within the head section.
+  </p>
+
+  <!-- ✅ External CSS -->
+  <h3 class="external-heading">This is styled with External CSS</h3>
+  <p class="external-para">
+    External CSS is written in a separate file (style.css) and linked to the HTML.
+  </p>
+
+</body>
+</html>
