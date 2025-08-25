@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML headings-formatting-links-images </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    section {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    .inline span, .inline a, .inline strong {
+      background-color: #f0f8ff;
+      padding: 2px 4px;
+      margin: 2px;
+    }
+
+    .block div, .block p {
+      background-color: #ffe4e1;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    img {
+      max-width: 300px;
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Basic Structure & Headings -->
+  <section>
+    <h2>1. Basic HTML Structure & Headings</h2>
+    <!-- Emmet Example: div>h1+h2+h3+h4+h5+h6 -->
+    <h1>Heading h1 - Most Important</h1>
+    <h2>Heading h2</h2>
+    <h3>Heading h3</h3>
+    <h4>Heading h4</h4>
+    <h5>Heading h5</h5>
+    <h6>Heading h6 - Least Important</h6>
+  </section>
+
+  <!-- Block vs Inline -->
+  <section>
+    <h2>2. Block vs Inline Elements</h2>
+    <div class="block">
+      <h3>Block Elements</h3>
+      <div>This is a block-level div</div>
+      <p>This is a block-level paragraph</p>
+    </div>
+    <div class="inline">
+      <h3>Inline Elements</h3>
+      <p>This is <span>span</span>, <a href="#">anchor</a>, and <strong>strong</strong> — inline elements.</p>
+    </div>
+  </section>
+
+  <!-- Emmet Shortcuts -->
+  <section>
+    <h2>3. Emmet Shortcut Examples</h2>
+    <ul>
+      <li><code>ul>li*3</code> gives:
+        <ul>
+          <li>List Item 1</li>
+          <li>List Item 2</li>
+          <li>List Item 3</li>
+        </ul>
+      </li>
+      <li><code>div.container>h2+p</code> gives:
+        <div class="container">
+          <h2>Heading</h2>
+          <p>Paragraph inside a div</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Text Formatting -->
+  <section>
+    <h2>4. Text Formatting Tags</h2>
+    <p><strong>Strong</strong> (bold with meaning)</p>
+    <p><em>Emphasized</em> (italic with meaning)</p>
+    <p><b>Bold</b> (visual only)</p>
+    <p><i>Italic</i> (visual only)</p>
+    <p><u>Underline</u></p>
+    <p><mark>Marked</mark> text</p>
+    <p>H<sub>2</sub>O → using subscript</p>
+    <p>E = mc<sup>2</sup> → using superscript</p>
+  </section>
+
+  <!-- Lists -->
+  <section>
+    <h2>5. Lists</h2>
+    <h4>Ordered List:</h4>
+    <ol>
+      <li>Wake up</li>
+      <li>Code</li>
+      <li>Sleep</li>
+    </ol>
+
+    <h4>Unordered List:</h4>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </section>
+
+  <!-- Links -->
+  <section>
+    <h2>6. Links</h2>
+    <p><a href="https://www.google.com" target="_blank">Visit Google</a></p>
+    <p><a href="mailto:someone@example.com">Send an Email</a></p>
+    <p><a href="tel:+919876543210">Call Now</a></p>
+  </section>
+
+  <!-- Images -->
+  <section>
+    <h2>7. Images</h2>
+    <p>This is an image of a cat:</p>
+    <img src="https://placekitten.com/300/200" alt="Cute kitten image">
+    <p>Note: Always use <code>alt</code> for accessibility.</p>
+  </section>
+
+</body>
+</html>

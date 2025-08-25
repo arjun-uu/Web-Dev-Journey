@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tables & Forms</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    table, th, td {
+      border: 1px solid #444;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    form {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 400px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= TABLES ================= -->
+  <section>
+    <h2>1. Student Result Table (Tables)</h2>
+
+    <!-- Basic table with header, body, and footer -->
+    <table>
+      <thead>
+        <tr>
+          <th>Roll No</th>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Marks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>101</td>
+          <td>Aryan</td>
+          <td>Math</td>
+          <td>88</td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>Sneha</td>
+          <td>Science</td>
+          <td>91</td>
+        </tr>
+        <tr>
+          <td rowspan="2">103</td>
+          <td rowspan="2">Priya</td>
+          <td>English</td>
+          <td>85</td>
+        </tr>
+        <tr>
+          <td>Social</td>
+          <td>89</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3"><strong>Total Students</strong></td>
+          <td>3</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+  <!-- ================= FORMS ================= -->
+  <section>
+    <h2>2. Contact Form (Forms)</h2>
+
+    <!-- Simple form with all common input types -->
+    <form action="#" method="post">
+      
+      <!-- Text input -->
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="fullname" placeholder="Enter your name" required>
+
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" minlength="6" required>
+
+      <!-- Number -->
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="10" max="100">
+
+      <!-- Radio -->
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+
+      <!-- Checkbox -->
+      <label>Skills:</label>
+      <input type="checkbox" id="html" name="skills" value="HTML">
+      <label for="html">HTML</label>
+
+      <input type="checkbox" id="css" name="skills" value="CSS">
+      <label for="css">CSS</label>
+
+      <input type="checkbox" id="js" name="skills" value="JavaScript">
+      <label for="js">JavaScript</label>
+
+      <!-- Textarea -->
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+
+      <!-- Dropdown -->
+      <label for="city">Select City:</label>
+      <select id="city" name="city">
+        <option value="">-- Select --</option>
+        <option value="dehradun">Dehradun</option>
+        <option value="delhi">Delhi</option>
+        <option value="mumbai">Mumbai</option>
+      </select>
+
+      <!-- Submit & Reset Button -->
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+
+    </form>
+  </section>
+
+</body>
+</html>

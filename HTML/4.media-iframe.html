@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Revision - Day 4: Media & Iframe</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    video, audio {
+      width: 100%;
+      max-width: 500px;
+      margin-top: 10px;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      max-width: 560px;
+      height: 315px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= IMAGE ================= -->
+  <section>
+    <h2>1. Image Example</h2>
+    <p>This is an image with proper <code>alt</code> and size attributes:</p>
+    <img src="https://3.bp.blogspot.com/-ajn-9ZveGms/Uim4czBNTgI/AAAAAAAAAWo/cbin6JlIv-w/s1600/Black-And-White-Small-Cat-HD-Wallpaper.jpg" alt="Cute kitten" width="400" height="250">
+  </section>
+
+  <!-- ================= AUDIO ================= -->
+  <section>
+    <h2>2. Audio Example</h2>
+    <p>This audio has controls, autoplay is optional (use with care):</p>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- ================= VIDEO ================= -->
+  <section>
+    <h2>3. Video Example</h2>
+    <p>This is a local/remote video with controls:</p>
+    <video controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- ================= IFRAME: YOUTUBE ================= -->
+  <section>
+    <h2>4. Embedded YouTube Video</h2>
+    <p>This is a YouTube video embedded using an iframe:</p>
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+  </section>
+
+  <!-- ================= IFRAME: GOOGLE MAPS ================= -->
+  <section>
+    <h2>5. Embedded Google Map</h2>
+    <p>This is a location embedded using Google Maps iframe:</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1159941918895!2d-122.40135068468716!3d37.79361707975619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064e2a2d3fb%3A0x3b4f1f56d2f138d4!2sSalesforce%20Tower!5e0!3m2!1sen!2sin!4v1631957013674!5m2!1sen!2sin"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+</body>
+</html>

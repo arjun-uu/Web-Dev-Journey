@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Semantic Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+    }
+    header, nav, main, footer, aside {
+      padding: 15px;
+    }
+    header {
+      background-color: #333;
+      color: white;
+    }
+    nav {
+      background-color: #555;
+      color: white;
+    }
+    nav a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+    main {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+    }
+    article, aside {
+      background-color: #f4f4f4;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    article {
+      flex: 3;
+    }
+    aside {
+      flex: 1;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Semantic Header -->
+  <header>
+    <h1>My Blog</h1>
+    <p>Welcome to a semantic HTML layout!</p>
+  </header>
+
+  <!-- Semantic Navigation -->
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Articles</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main>
+    <!-- Main Article Section -->
+    <article>
+      <h2>Understanding Semantic HTML</h2>
+      <p>Semantic HTML introduces meaning to your web page instead of just presentation.</p>
+      <p>Tags like <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;footer&gt;</code> describe the purpose of the element.</p>
+
+      <section>
+        <h3>Why Use Semantic Tags?</h3>
+        <ul>
+          <li>Improves accessibility</li>
+          <li>Better for SEO</li>
+          <li>Cleaner, meaningful code</li>
+        </ul>
+      </section>
+    </article>
+
+    <!-- Aside Section -->
+    <aside>
+      <h3>Related Links</h3>
+      <ul>
+        <li><a href="#">What is HTML?</a></li>
+        <li><a href="#">Learn CSS Basics</a></li>
+        <li><a href="#">Web Development Roadmap</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Arjun's Semantic Web Page | All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Coding Exercises</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    section {
+      margin-bottom: 30px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .tooltip {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 1px dotted black;
+    }
+    .tooltip:hover::after {
+      content: "This is a tooltip!";
+      position: absolute;
+      background-color: #000;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      top: 25px;
+      left: 0;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Exercise 1 -->
+  <section>
+    <h2>Exercise 1: Simple Heading</h2>
+    <h1>This is a Simple Heading</h1>
+  </section>
+
+  <!-- Exercise 2 -->
+  <section>
+    <h2>Exercise 2: Paragraph with a Link</h2>
+    <p>Visit <a href="https://www.google.com">Google</a> for more info.</p>
+  </section>
+
+  <!-- Exercise 3 -->
+  <section>
+    <h2>Exercise 3: Tooltip on Hover</h2>
+    <p>Hover over this <span class="tooltip">text</span> to see the tooltip.</p>
+  </section>
+
+  <!-- Exercise 4 -->
+  <section>
+    <h2>Exercise 4: Button</h2>
+    <button>Click Me</button>
+  </section>
+
+  <!-- Exercise 5 -->
+  <section>
+    <h2>Exercise 5: Unordered List</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </section>
+
+  <!-- Exercise 6 -->
+  <section>
+    <h2>Exercise 6: Simple Table</h2>
+    <table border="1" cellpadding="8">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Arjun</td>
+        <td>22</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Exercise 7 -->
+  <section>
+    <h2>Exercise 7: Form with Input Fields</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <!-- Exercise 8 -->
+  <section>
+    <h2>Exercise 8: Form with Dropdown Menu</h2>
+    <form>
+      <label for="language">Choose Language:</label>
+      <select id="language">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+      </select>
+    </form>
+  </section>
+
+  <!-- Exercise 9 -->
+  <section>
+    <h2>Exercise 9: Image with Alt Text</h2>
+    <img src="https://placekitten.com/200/200" alt="Cute kitten" width="200">
+  </section>
+
+  <!-- Exercise 10 -->
+  <section>
+    <h2>Exercise 10: Hyperlink Opening in a New Tab</h2>
+    <a href="https://www.wikipedia.org" target="_blank">Open Wikipedia in New Tab</a>
+  </section>
+
+  <!-- Exercise 11 -->
+  <section>
+    <h2>Exercise 11: Progress Bar</h2>
+    <label for="progress">Progress:</label>
+    <progress id="progress" value="70" max="100">70%</progress>
+  </section>
+
+</body>
+</html>
