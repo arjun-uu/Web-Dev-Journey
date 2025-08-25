@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript DOM Challenges</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        button {
+            margin: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        li.highlight {
+            background-color: yellow;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>JavaScript DOM Challenges</h1>
+
+<!-- Challenge 1 -->
+<h2>Challenge 1: Accessing DOM Elements</h2>
+<p id="para">This is a paragraph. Click the button to change me!</p>
+<button id="btn">Change Text</button>
+
+<!-- Challenge 2 -->
+<h2>Challenge 2: Traversing the DOM</h2>
+<ul id="cities">
+    <li>New York</li>
+    <li>Tokyo</li>
+    <li>Paris</li>
+    <li>London</li>
+</ul>
+<button onclick="highlightFirstCity()">Highlight First City</button>
+
+<!-- Challenge 3 -->
+<h2>Challenge 3: Manipulating DOM Elements</h2>
+<p id="order">Order: Latte</p>
+<button onclick="changeOrder()">Change Order to Espresso</button>
+
+<!-- Challenge 4 -->
+<h2>Challenge 4: Creating and Inserting Elements</h2>
+<ul id="shoppingList">
+    <li>Bread</li>
+    <li>Milk</li>
+</ul>
+<button onclick="addItem()">Add a New Item to the Shopping List</button>
+
+<!-- Challenge 5 -->
+<h2>Challenge 5: Removing DOM Elements</h2>
+<ul id="tasks">
+    <li>Task 1</li>
+    <li>Task 2</li>
+    <li>Task 3</li>
+</ul>
+<button onclick="removeLastTask()">Remove Last Task</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
